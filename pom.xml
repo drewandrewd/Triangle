@@ -22,7 +22,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.7</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -117,6 +117,13 @@
         <configuration>
           <showSuccess>false</showSuccess>
         </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-report-parser</artifactId>
+            <version>3.0.0-M5</version>
+          </dependency>
+        </dependencies>
       </plugin>
     </plugins>
   </build>
